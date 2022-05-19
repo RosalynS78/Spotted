@@ -1,2 +1,2 @@
-![Table](READMEdocs\table.jpg)
-![Flowchart](READMEdocs\flowchart.jpg)
+![Table](/READMEdocs/table.jpg)
+![Flowchart](/READMEdocs/flowchart.jpg)
