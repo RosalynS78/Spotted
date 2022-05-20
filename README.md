@@ -1,9 +1,11 @@
-# Database
-## Users Table
+# **Spotted**
+
+## Database
+### Users Table
 ![users_table](/READMEdocs/users_table.jpg)
-## Pet Table
+### Pet Table
 ![pet_table](/READMEdocs/pet_table.jpg)
-# Table
+## Table
 ![Table](/READMEdocs/table.jpg)
-# Flowchart
+## Flowchart
 ![Flowchart](/READMEdocs/flowchart.jpg)
