@@ -24,12 +24,17 @@ users_id (delete user)
 *get 
 pet (all)
 pet_id 
+pet_missing
+pet_found
 
 *post
-pet (create pet)
+pet_missing 
+pet_found
 
 *put 
 pet_id (update pet)
+pet_missing (update)
+pet_found (update)
 
 *delete
 pet_id (delete pet)
