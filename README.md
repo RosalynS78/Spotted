@@ -15,14 +15,17 @@ The function is to let users post lost pets or found pets with a description, ph
 *future planning*
 - post onto social media (facebook) to boost more audience
 
-## Table
-![Table](/READMEdocs/table.jpg)
 ## Flowchart
 ![Flowchart](/READMEdocs/flowchart.jpg)
+
+## Table
+![Table](/READMEdocs/table.jpg)
 
 ## Database
 ### Users Table
 ![users_table](/READMEdocs/users_table.jpg)
+
 ### Pet Table
 ![pet_table](/READMEdocs/pet_table.jpg)
+
 ### SQL Statements for Table Creation
