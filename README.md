@@ -8,6 +8,9 @@ The function is to let users post lost pets or found pets with a description, ph
 - Update information on pets 
 - Delete pets when no longer needed
 
+*extra features*
+- printable pdf flyer
+- generate qr code 
 
 ## Database
 ### Users Table
