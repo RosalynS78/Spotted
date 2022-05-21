@@ -1,0 +1,36 @@
+*signup route
+router.post
+
+*login route
+router.post
+
+! users 
+
+*get 
+users (all)
+users_id
+
+*post
+users (create user)
+
+*put 
+users_id (update user)
+
+*delete
+users_id (delete user)
+
+! pets
+
+*get 
+pet (all)
+pet_id 
+
+*post
+pet (create pet)
+
+*put 
+pet_id (update pet)
+
+*delete
+pet_id (delete pet)
+
