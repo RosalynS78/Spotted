@@ -1,7 +1,7 @@
-*signup route
+*signup router
 router.post
 
-*login route
+*login router
 router.post
 
 ! users 
@@ -12,9 +12,13 @@ users_id
 
 *post
 users (create user)
+users_contact (create contact)
+users_location (create location)
 
 *put 
 users_id (update user)
+users_contact (update contact)
+users_location (update location)
 
 *delete
 users_id (delete user)
@@ -26,15 +30,22 @@ pet (all)
 pet_id 
 pet_missing
 pet_found
+pet_type
 
 *post
-pet_missing 
-pet_found
+pet (create pet)
+pet_type (create specicies)
+pet_description (sex, age, breed, photo)
+pet_missing (tag missing)
+pet_found (tag found)
+pet_location (lat, long)
 
 *put 
 pet_id (update pet)
+pet_description (update)
 pet_missing (update)
 pet_found (update)
+pet_location (update)
 
 *delete
 pet_id (delete pet)

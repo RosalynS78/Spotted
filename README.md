@@ -43,3 +43,4 @@ The function is to let users post lost pets or found pets with a description, ph
 - ReactJS
 - Heroku
 - JawsDB MySQL
+
