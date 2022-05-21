@@ -29,4 +29,4 @@ The function is to let users post lost pets or found pets with a description, ph
 ![pet_table](/READMEdocs/pet_table.jpg)
 
 ### SQL Statements for Table Creation
-READMEdocs/sql_statemnts.txt
+[sql statements](/READMEdocs/sql_statements.txt)
