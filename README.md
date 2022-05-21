@@ -31,8 +31,8 @@ The function is to let users post lost pets or found pets with a description, ph
 ### SQL Statements for Table Creation
 [sql statements commands](/READMEdocs/sql_statements.txt)
 
-#### routers
-[routing for users and pet and auth] (/READMEdocs/routers.text)
+#### *routers*
+[routing for users and pet and auth](/READMEdocs/routers.txt))
 
 ## **Tech Stacks**
 - Node.js
