@@ -7,6 +7,7 @@ const usersRouter = require('./routers/users');
 const app = express();
 const port = process.env.PORT || 4001;
 
+app.use(express.json());
 
 app.use('/users', usersRouter);
 // app.use('/pet', petsRouter);
