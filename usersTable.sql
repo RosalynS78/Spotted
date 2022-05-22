@@ -34,13 +34,13 @@ DROP TABLE IF EXISTS users, usersContact, usersLocation;
  
 
 INSERT INTO users
-	(first_name, last_name)
+	(user_id, first_name, last_name)
 	VALUES
-	("Joe", "Dirt"),
-	("Ricky", "Martin"),
-	("Celine", "Dion"),
-	("Sandra", "Bullock"),
-	("Channing", "Tatum");
+	(1,"Joe", "Dirt"),
+	(2,"Ricky", "Martin"),
+	(3,"Celine", "Dion"),
+	(4,"Sandra", "Bullock"),
+	(5,"Channing", "Tatum");
 
 INSERT INTO usersContact
 	(user_id, email, phone)
