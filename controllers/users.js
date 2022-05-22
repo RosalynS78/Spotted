@@ -1,5 +1,5 @@
 const mysql = require('mysql')
-const pool = require('../sql/connection')
+const pool = require('../sql/connections')
 const { handleSQLError } = require('../sql/error')
 
 const getAllUsers = (req, res) => {
