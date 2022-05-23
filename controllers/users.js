@@ -1,4 +1,4 @@
-const mysql = require('mysql')
+const mysql = require('mysql2')
 const pool = require('../sql/connections')
 const { handleSQLError } = require('../sql/error')
 
@@ -29,10 +29,16 @@ const createUser = (req, res) => {
     return res.json({ newId: results.insertId });
   })
 }
+const getUserContact = (req, res) => {
+  pool.query("SELECT * FROM userscontact", (err, rows) => {
+    if (err) return handleSQLError(res, err)
+    return res.json(rows);
+  })
+}
 
 const createUserContact = (req, res) => {
   const { email, phone } = req.body
-  let sql = "INSERT INTO users (email, phone) VALUES (?, ?)"
+  let sql = "INSERT INTO userscontact (email, phone) VALUES (?, ?)"
   sql = mysql.format(sql, [ email, phone ])
 
   pool.query(sql, (err, results) => {
@@ -43,7 +49,7 @@ const createUserContact = (req, res) => {
 
 const createUserLocation = (req, res) => {
   const { city, state, zip } = req.body
-  let sql = "INSERT INTO users (city, state, zip) VALUES (?, ?, ?)"
+  let sql = "INSERT INTO userslocation (city, state, zip) VALUES (?, ?, ?)"
   sql = mysql.format(sql, [ firstName, lastName ])
 
   pool.query(sql, (err, results) => {
@@ -98,6 +104,7 @@ module.exports = {
   getAllUsers,
   getUserById,
   createUser,
+  getUserContact,
   createUserContact,
   createUserLocation,
   updateUserById,

@@ -6,6 +6,8 @@ router.get('/', usersController.getAllUsers)
 
 router.get('/:id', usersController.getUserById)
 
+router.get('/', usersController.getUserContact)
+
 router.post('/', usersController.createUser)
 
 router.post('/', usersController.createUserContact)

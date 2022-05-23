@@ -1,11 +1,11 @@
-require('dotenv').config()
+const mysql = require('mysql2')
 const express = require("express");
 
 const usersRouter = require('./routers/users');
 // const petsRouter = require("./routers/pet");
 
 const app = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 4001;
 
 app.use(express.json());
 
