@@ -5,7 +5,7 @@ const usersRouter = require('./routers/users');
 // const petsRouter = require("./routers/pet");
 
 const app = express();
-const port = process.env.PORT || 4001;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
   })
 
 
-app.listen(port, () => {
- console.log(`Web server is listening on port ${port}!`);
-});
+  app.listen(process.env.PORT || 3000, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  });
 
