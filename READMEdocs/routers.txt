@@ -7,11 +7,11 @@ router.post
 ! users 
 
 *get 
-users (all)
-users_id
+?users (all)
+?users_id
 
 *post
-users (create user)
+?users (create user)
 users_contact (create contact)
 users_location (create location)
 

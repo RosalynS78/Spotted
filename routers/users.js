@@ -6,20 +6,20 @@ router.get('/', usersController.getAllUsers)
 
 router.get('/:id', usersController.getUserById)
 
-router.get('/', usersController.getUserContact)
+router.get('/', usersController.getUserContacts)
 
 router.post('/', usersController.createUser)
 
-router.post('/', usersController.createUserContact)
+// router.post('/', usersController.createUserContact)
 
-router.post('/', usersController.createUserLocation)
+// router.post('/', usersController.createUserLocation)
 
-router.put('/:id', usersController.updateUserById)
+// router.put('/:id', usersController.updateUserById)
 
-router.put('/:id', usersController.updateUserContact) 
+// router.put('/:id', usersController.updateUserContact) 
 
-router.put('/:id', usersController.updateUserLocation)
+// router.put('/:id', usersController.updateUserLocation)
 
-router.delete('/:id', usersController.deleteUserById)
+// router.delete('/:id', usersController.deleteUserById)
 
 module.exports = router

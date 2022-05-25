@@ -19,11 +19,11 @@ The function is to let users post lost pets or found pets with a description, ph
 ![Flowchart](/READMEdocs/flowchart.jpg)
 
 ## Table
-![Table](/READMEdocs/table.jpg)
+![Table](/READMEdocs/simplifieduserstable.jpg)
 
 ## Database
 ### Users Table
-![users_table](/READMEdocs/users_table.jpg)
+![users_table](/READMEdocs/simplifiedusers_table.jpg)
 
 ### Pet Table
 ![pet_table](/READMEdocs/pet_table.jpg)
