@@ -1,4 +1,4 @@
-![Logo](/READMEdocs/readMeLogo.png)
+![Logo](/READMEdocs/readMeLogo.jpg)
 
 The purpose of Spotted is to help reunite lost pets with their owners and maybe even help abandoned pets find new homes.
 
