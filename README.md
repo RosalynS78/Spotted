@@ -36,6 +36,7 @@ The function is to let users post lost pets or found pets with a description, ph
 [routing for users and pet and log in](/READMEdocs/routers.txt)
 
 ## Wireframe
+[landing page mockup](/READMEdocs/wireFrameLand.jpg)
 
 ## **Tech Stacks**
 - Node.js
