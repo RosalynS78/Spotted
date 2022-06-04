@@ -1,3 +1,4 @@
+SET FOREIGN_KEY_CHECKS=0;
 DROP TABLE IF EXISTS users, usersContact, usersLocation, usersCredentials;
 
 CREATE TABLE users (
@@ -52,20 +53,20 @@ VALUES
 INSERT INTO usersContact
 	(user_id, email, phone)
 VALUES
-	("cory.gibes@gmail.com", "626-696-2777"),
-	("josephine_darakjy@darakjy.org", "810-292-9388"),
-	("lai@gmail.com", "415-926-6089"),
-	("barrett.toyama@toyama.org", "817-577-6151"),
-	("levi.munis@gmail.com", "508-658-7802");
+	(10,"cory.gibes@gmail.com","626-696-2777"),
+	(20,"josephine_darakjy@darakjy.org","810-292-9388"),
+	(30,"lai@gmail.com","415-926-6089"),
+	(40,"barrett.toyama@toyama.org","817-577-6151"),
+	(50,"levi.munis@gmail.com","508-658-7802");
 
 INSERT INTO usersLocation 
 	(user_id, city, state, zip)
 VALUES
-	("San Diego", "CA", "92101"),
-	("San Antonio", "TX", "78015"),
-	("Las Vegas", "NV", "88901"),
-	("Roswell", "NM", "88202"),
-	("Jackson", "MS", "39056");
+	(10,"San Diego","CA",92101),
+	(20,"San Antonio","TX",78015),
+	(30,"Las Vegas","NV",88901),
+	(40,"Roswell","NM",88202),
+	(50,"Jackson","MS",39056);
 
 
 
