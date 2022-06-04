@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS users, usersContact, usersLocation;
+DROP TABLE IF EXISTS users, usersContact, usersLocation, usersCredentials;
 
     CREATE TABLE users (
         id INT NOT NULL AUTO_INCREMENT,
@@ -22,6 +22,15 @@ INSERT INTO users
 	("Celine", "Dion", "lai@gmail.com", "415-926-6089", "Las Vegas", "NV", "88901"),
 	("Sandra", "Bullock", "barrett.toyama@toyama.org", "817-577-6151", "Roswell", "NM", "88202"),
 	("Channing", "Tatum", "levi.munis@gmail.com", "508-658-7802", "Jackson", "MS", "39056");
+	
+CREATE TABLE usersCredentials (
+  id INT NOT NULL AUTO_INCREMENT,
+  username VARCHAR(25),
+  password VARCHAR(100),
+  PRIMARY KEY (id),
+  UNIQUE KEY (username)
+);
+
 
 
 

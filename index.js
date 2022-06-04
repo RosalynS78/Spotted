@@ -1,8 +1,11 @@
+require('dotenv').config()
 const mysql = require('mysql2')
 const express = require("express");
 
 const usersRouter = require('./routers/users');
 // const petsRouter = require("./routers/pet");
+const authRouter = require('./routers/auth');
+const { logger } = require('./middleware');
 
 const app = express();
 const port = process.env.PORT || 4001;
@@ -10,7 +13,8 @@ const port = process.env.PORT || 4001;
 app.use(express.json());
 
 
-
+app.use(logger);
+app.use('/auth', authRouter);
 app.use('/users', usersRouter);
 // app.use('/pet', petsRouter);
 
