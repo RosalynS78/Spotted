@@ -30,15 +30,15 @@ The function is to let users post lost pets or found pets with a description, ph
 ![pet_table](/READMEdocs/pet_table.jpg)
 
 ### SQL Statements for Table Creation
-- [sql statements commands the mockup](/READMEdocs/sql_statements.txt)
+- ~~[sql statements commands the mockup](/READMEdocs/sql_statements.txt)~~
 - [petTable first draft](/sql/petTable.sql)
 - !works [usersTable first draft](/sql/usersTable.sql)
 
 #### *routers*
-- [routing for users and pet and log in the mockup](/READMEdocs/routers.txt)
+- ~~ [routing for users and pet and log in the mockup](/READMEdocs/routers.txt) ~~
 - [pets routers first draft](/routers/pets.js)
 - !works [users routers first draft](/routers/users.js)
-- works [auth routers first draft](/routers/auth.js)
+- !works [auth routers first draft](/routers/auth.js)
 
 #### *controllers*
 - [pets controllers first draft](/controllers/pets.js)
