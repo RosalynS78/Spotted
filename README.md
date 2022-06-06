@@ -35,7 +35,7 @@ The function is to let users post lost pets or found pets with a description, ph
 - !works [usersTable first draft](/sql/usersTable.sql)
 
 #### *routers*
-- ~~ [routing for users and pet and log in the mockup](/READMEdocs/routers.txt) ~~
+- ~~[routing for users and pet and log in the mockup](/READMEdocs/routers.txt)~~
 - [pets routers first draft](/routers/pets.js)
 - !works [users routers first draft](/routers/users.js)
 - !works [auth routers first draft](/routers/auth.js)
