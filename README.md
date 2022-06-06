@@ -41,13 +41,17 @@ The function is to let users post lost pets or found pets with a description, ph
 ## **Tech Stacks**
 - Node.js
 - nodemon
-- MySQL
+- MySQL2
 - express
+- express-jwt
+- jsonwebtoken
+- jwks-rsa
+- bcrypt
 - dotenv
 - axios
-- bcrypt
-- jsonwebtoken
 - ReactJS
+- auth0
 - Heroku
 - JawsDB MySQL
+
 
