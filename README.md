@@ -34,8 +34,8 @@ The function is to let users post lost pets or found pets with a description, ph
 
 ### SQL Statements for Table Creation
 - ~~[sql statements commands the mockup](/READMEdocs/sql_statements.txt)~~
-- [qrTable first draft](/sql/qrTable.sql)
-- [petTable first draft](/sql/petTable.sql)
+- !works [qrTable first draft](/sql/qrTable.sql)
+- !works [petTable first draft](/sql/petTable.sql)
 - !works [usersTable first draft](/sql/usersTable.sql)
 
 #### *routers*
