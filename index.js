@@ -4,6 +4,7 @@ const express = require("express");
 
 const usersRouter = require('./routers/users');
 // const petsRouter = require("./routers/pet");
+// const qrRouter = require("./routers/qr");
 const authRouter = require('./routers/auth');
 const { logger } = require('./middleware');
 
@@ -17,6 +18,7 @@ app.use(logger);
 app.use('/auth', authRouter);
 app.use('/users', usersRouter);
 // app.use('/pet', petsRouter);
+//app.use('/qr', qrRouter);
 
 app.get('/', (req, res) => {
     res.send('Welcome to our server!')

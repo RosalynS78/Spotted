@@ -29,18 +29,24 @@ The function is to let users post lost pets or found pets with a description, ph
 ### Pet Table
 ![pet_table](/READMEdocs/pet_table.jpg)
 
+### QR Table
+![qr_table](/READMEdocs/qr_table.jpg)
+
 ### SQL Statements for Table Creation
 - ~~[sql statements commands the mockup](/READMEdocs/sql_statements.txt)~~
+- [qrTable first draft](/sql/qrTable.sql)
 - [petTable first draft](/sql/petTable.sql)
 - !works [usersTable first draft](/sql/usersTable.sql)
 
 #### *routers*
 - ~~[routing for users and pet and log in the mockup](/READMEdocs/routers.txt)~~
+- [qr routers first draft](/routers/qr.js)
 - [pets routers first draft](/routers/pets.js)
 - !works [users routers first draft](/routers/users.js)
 - !works [auth routers first draft](/routers/auth.js)
 
 #### *controllers*
+- [qr controllers first draft](/controllers/qr.js)
 - [pets controllers first draft](/controllers/pets.js)
 - !works [users controllers first draft](/controllers/users.js)
 - !works [auth controllers first draft](/controllers/auth.js)
