@@ -47,6 +47,7 @@ The function is to let users post lost pets or found pets with a description, ph
 
 ## Wireframe
 ![landing page mockup](/READMEdocs/landingPage.jpg)
+![wireframe first draft](/READMEdocs/wireframe.jpg)
 
 ## **Tech Stacks**
 * Node.js
