@@ -7,7 +7,7 @@ CREATE TABLE pet_found (
 	pet_name VARCHAR (50) NOT NULL,
 	sex VARCHAR (10) NOT NULL,
 	age VARCHAR (10) NOT NULL,
-    Photo VARBINARY (20) not null,
+    photo VARBINARY (20) not null,
     lastseen_date VARCHAR (50),
 	PRIMARY KEY (pet_id),
 	FOREIGN KEY (id) 
@@ -21,7 +21,7 @@ CREATE TABLE pet_missing (
 	pet_name VARCHAR (50) NOT NULL,
 	sex VARCHAR (10) NOT NULL,
 	age VARCHAR (10) NOT NULL,
-	Photo VARBINARY (20) not null,
+	photo VARBINARY (20) not null,
     lastseen_date VARCHAR (50),
 	PRIMARY KEY (pet_id),
 	FOREIGN KEY (id) 
