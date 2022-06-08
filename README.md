@@ -46,7 +46,9 @@ The function is to let users post lost pets or found pets with a description, ph
 - !works [auth controllers first draft](/controllers/auth.js)
 
 ## Wireframe
+*Landing Page Mockup*
 ![landing page mockup](/READMEdocs/landingPage.jpg)
+*Wireframe First Draft*
 ![wireframe first draft](/READMEdocs/wireframe.jpg)
 
 ## **Tech Stacks**
