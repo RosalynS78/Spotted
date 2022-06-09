@@ -1,5 +1,5 @@
 
-DROP TABLE IF EXISTS pets, pet_found, pet_missing, pet_type, pet_location;
+DROP TABLE IF EXISTS pets, pet_found, pet_missing, pet_type;
 
 CREATE TABLE pets (
 	id INT NOT NULL,
@@ -54,17 +54,6 @@ CREATE TABLE pet_type (
 
 ); 
 
-CREATE TABLE pet_location (
-	id INT NOT NULL,
-	pet_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-	location VARCHAR(250) NOT NULL,
-	PRIMARY KEY (id),
-	FOREIGN KEY (pet_id)
-  	REFERENCES pets (pet_id)
-    ON DELETE CASCADE
-	
-
-);
 INSERT INTO pets
 	(pet_id, id, pet_name, sex, age, photo, lastseen_date)
 VALUES
@@ -96,14 +85,6 @@ VALUES
 	(200,2,"Cat"),
 	(400,4,"Other");
 
-INSERT INTO pet_location
-	(pet_id, id,  location)
-VALUES
-	(100,1,"16.08863, -7.06641"),
-	(300,2,"33.98872, -83.89796"),
-	(500,3,"41.9431, -86.55697"),
-	(200,4,"10.2495, 44.6193"),
-	(400,5,"38.86456, -77.18776");
 
 
 
