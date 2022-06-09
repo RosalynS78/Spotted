@@ -20,7 +20,8 @@ The function is to let users post lost pets or found pets with a description, ph
 ![Flowchart](/READMEdocs/flowchart.jpg)
 
 ## Table
-![Table](/READMEdocs/table.jpg)
+- ~~[Rough Draft Table](/READMEdocs/tableRough.jpg)~~
+![Table](/READMEdocs/tableReverse.jpg)
 
 ## Database
 ### Users Table

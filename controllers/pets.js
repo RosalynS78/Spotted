@@ -2,10 +2,16 @@ const mysql = require('mysql2')
 const pool = require('../sql/connections')
 const { handleSQLError } = require('../sql/error')
 
-
-// module.exports = {
+const getPetById = (req, res) => {
+    pool.query("SELECT * FROM  pets", (err, rows) => {
+      if (err) return handleSQLError(res, err)
+      return res.json(rows);
+    })
+  }
+  
+module.exports = {
      //post by id
-// getPostById,
+getPetById
     //post of lost pets  
 // getMissingPet,
     //post of found pets
@@ -24,4 +30,4 @@ const { handleSQLError } = require('../sql/error')
 // put
     //delete post by id
 // delete
-// }
+}

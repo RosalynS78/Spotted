@@ -3,7 +3,7 @@ const mysql = require('mysql2')
 const express = require("express");
 
 const usersRouter = require('./routers/users');
-// const petsRouter = require("./routers/pet");
+const petsRouter = require("./routers/pets");
 // const qrRouter = require("./routers/qr");
 const authRouter = require('./routers/auth');
 const { logger } = require('./middleware');
@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(logger);
 app.use('/auth', authRouter);
 app.use('/users', usersRouter);
-// app.use('/pet', petsRouter);
+app.use('/pets', petsRouter);
 //app.use('/qr', qrRouter);
 
 app.get('/', (req, res) => {
