@@ -15,6 +15,8 @@ The function is to let users post lost pets or found pets with a description, ph
 
 *future planning*
 - post onto social media (facebook) to reach more viewers
+- google maps api for location tracking
+- microchip local shelter database api
 
 ## Flowchart
 ![Flowchart](/READMEdocs/flowchart.jpg)
