@@ -9,9 +9,9 @@ CREATE TABLE qrcode (
 	age VARCHAR (10) NOT NULL,
     photo VARBINARY (20) not null,
     qr VARBINARY (20) not null,
-	PRIMARY KEY (id),
-	FOREIGN KEY (pet_id) 
-	REFERENCES pets (pet_id) 
+	PRIMARY KEY (pet_id),
+	FOREIGN KEY (id) 
+	REFERENCES users (id) 
 	ON DELETE CASCADE
 );
 

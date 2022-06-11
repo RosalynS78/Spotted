@@ -1,5 +1,5 @@
 
-DROP TABLE IF EXISTS pets, pet_found, pet_missing, pet_type;
+DROP TABLE IF EXISTS pets, pet_found, petMissing, pet_type;
 
 CREATE TABLE pets (
 	id INT NOT NULL,
@@ -29,7 +29,7 @@ CREATE TABLE pet_found (
     ON DELETE CASCADE
 );
 
-CREATE TABLE pet_missing (
+CREATE TABLE petMissing (
 	id INT NOT NULL,
 	pet_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
 	pet_name VARCHAR (50) NOT NULL,
@@ -70,7 +70,7 @@ VALUES
 	(300,3,"Tiger","Female","12","MEDIUMBLOB","03.16.22" ),
 	(500,5,"Hiro","Female","6","MEDIUMBLOB","08.19.22");
 
-INSERT INTO pet_missing
+INSERT INTO petMissing
 	(pet_id, id, pet_name, sex, age, photo, lastseen_date)
 VALUES
 	(200,2,"Leo","Male","10","MEDIUMBLOB","06.20.22"),

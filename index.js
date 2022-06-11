@@ -4,6 +4,7 @@ const express = require("express");
 
 const usersRouter = require('./routers/users');
 const petsRouter = require("./routers/pets");
+const petMissingRouter = require("./routers/petMissing");
 // const qrRouter = require("./routers/qr");
 const authRouter = require('./routers/auth');
 const { logger } = require('./middleware');
@@ -18,6 +19,7 @@ app.use(logger);
 app.use('/auth', authRouter);
 app.use('/users', usersRouter);
 app.use('/pets', petsRouter);
+app.use('/petMissing', petMissingRouter);
 //app.use('/qr', qrRouter);
 
 app.get('/', (req, res) => {

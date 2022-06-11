@@ -2,16 +2,32 @@ const mysql = require('mysql2')
 const pool = require('../sql/connections')
 const { handleSQLError } = require('../sql/error')
 
-const getPetById = (req, res) => {
+const getAllPets = (req, res) => {
     pool.query("SELECT * FROM  pets", (err, rows) => {
       if (err) return handleSQLError(res, err)
       return res.json(rows);
     })
   }
+
+  const getPetsById = (req, res) => {
+    let sql = "SELECT * FROM pets WHERE pet_id = ?"
+    sql = mysql.format(sql, [ req.params.pet_id ])
+  
+    pool.query(sql, (err, rows) => {
+      if (err) return handleSQLError(res, err)
+      return res.json(rows);
+    })
+  }
+
+
+
+
+
   
 module.exports = {
-     //post by id
-getPetById
+getAllPets,
+getPetsById
+
     //post of lost pets  
 // getMissingPet,
     //post of found pets
