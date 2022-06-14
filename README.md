@@ -26,8 +26,8 @@ The function is to let users post lost pets or found pets with a description, ph
 
 mysql Reverse Engineer
 Redo primary and foreign keys
-![tempTable](/READMEdocs/tableReverse.jpg)
 ![Table](/READMEdocs/tempTable.jpg)
+![tempTable](/READMEdocs/tableReverse.jpg)
 
 ## Database
 ### Users Table
