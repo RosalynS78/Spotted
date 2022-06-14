@@ -6,26 +6,8 @@ router.get('/', petsController.getAllPets)
 
 router.get('/:pet_id', petsController.getPetsById)
 
+router.put('/:pet_id', petsController.updatePetsById)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+router.delete('/:pet_id', petsController.deletePetsById)
 
 module.exports = router

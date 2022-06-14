@@ -2,24 +2,23 @@
 DROP TABLE IF EXISTS qrcode;
 
 CREATE TABLE qrcode (
-	id INT NOT NULL,
-	pet_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-	pet_name VARCHAR (50) NOT NULL,
-	sex VARCHAR (10) NOT NULL,
-	age VARCHAR (10) NOT NULL,
-    photo VARBINARY (20) not null,
-    qr VARBINARY (20) not null,
-	PRIMARY KEY (pet_id),
-	FOREIGN KEY (id) 
-	REFERENCES users (id) 
-	ON DELETE CASCADE
+	user_id VARCHAR(50),
+	-- SERIAL is an auto-incremented integer column
+	pet_id SERIAL PRIMARY KEY,
+	pet_name VARCHAR(50) NOT NULL,
+	gender CHAR(10) NOT NULL,
+	age VARCHAR (50) NOT NULL,
+	-- varbinary uses less space
+	photo VARBINARY (20) NOT NULL,
+	lost_status CHAR(10) NOT NULL,
+	qr_code VARBINARY (20) not null
 );
 
 INSERT INTO qrcode
-	(pet_id, id, pet_name, sex, age,photo, qr)
+	(pet_name, gender, age, photo, qr_code, lost_status)
 VALUES
-	(100,1,"Fido","Male","5","MEDIUMBLOB","MEDIUMBLOB"),
-    (200,2,"Leo","Male","10","MEDIUMBLOB","MEDIUMBLOB"),
-	(300,3,"Tiger","Female","12","MEDIUMBLOB","MEDIUMBLOB"),
-    (400,4,"Jack","Male","4","MEDIUMBLOB","MEDIUMBLOB"),
-	(500,5,"Hiro","Female","6","MEDIUMBLOB","MEDIUMBLOB");
+	("Fido","Male","5","MEDIUMBLOB","MEDIUMBLOB","Found"),
+    ("Leo","Male","10","MEDIUMBLOB","MEDIUMBLOB","Lost"),
+	("Tiger","Female","12","MEDIUMBLOB","MEDIUMBLOB","Found"),
+    ("Jack","Male","4","MEDIUMBLOB","MEDIUMBLOB","Lost"),
+	("Hiro","Female","6","MEDIUMBLOB","MEDIUMBLOB","Found");

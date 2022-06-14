@@ -26,14 +26,14 @@ const getUserById = (req, res) => {
 
   pool.query(sql, (err, results) => {
     if (err) return handleSQLError(res, err)
-    return res.json({ newId: results.insertId});
+    return res.json({newId: results.insertId});
   })
 }
 
 const updateUserById = (req, res) => {
-  const { firstName, lastName } = req.body
-  let sql = "UPDATE users SET first_name = '?', last_name = '?' WHERE id = ?"
-  sql = mysql.format(sql, [ firstName, lastName, req.params.id ])
+  const { firstName, lastName, email, phone, city, state, zip } = req.body
+  let sql = "UPDATE users SET first_name = '?', last_name = '?',  email = '?', phone = '?', city = '?', state = '?', zip = '?' WHERE id = ?"
+  sql = mysql.format(sql, [ firstName, lastName, email, phone, city, state, zip, req.params.id ])
 
   pool.query(sql, (err, results) => {
     if (err) return handleSQLError(res, err)

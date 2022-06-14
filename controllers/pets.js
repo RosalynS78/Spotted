@@ -19,31 +19,31 @@ const getAllPets = (req, res) => {
     })
   }
 
+  const updatePetsById = (req, res) => {
+    const { petName, gender, age, photo, dateMissing, status } = req.body
+    let sql = "UPDATE pets SET pet_name = '?', gender = '?',  age = '?', photo = '?', lastseen_date = '?', lost_status = '?' WHERE pet_id = ?"
+    sql = mysql.format(sql, [ petName, gender, age, photo, dateMissing, status , req.params.pet_id ])
+  
+    pool.query(sql, (err, results) => {
+      if (err) return handleSQLError(res, err)
+      return res.status(204).json();
+    })
+  }
 
-
-
-
+  const deletePetsById = (req, res) => {
+    let sql = "DELETE FROM pets WHERE pet_id = ?"
+    sql = mysql.format(sql, [ req.params.pet_id ])
+  
+    pool.query(sql, (err, results) => {
+      if (err) return handleSQLError(res, err)
+      return res.json({ message: `Deleted ${results.affectedRows} pet(s)` });
+    })
+  }
   
 module.exports = {
 getAllPets,
-getPetsById
-
-    //post of lost pets  
-// getMissingPet,
-    //post of found pets
-// getFoundPet,
-    //post new lost pets
-// postMissingPet,
-    //post new found pets
-// postFoundPet,
-    //search by information of found pet
-// post
-    //search by information of lost pet
-// post
-    // changes of find/lost pet
-// put
-    //update user
-// put
-    //delete post by id
-// delete
+getPetsById,
+updatePetsById,
+deletePetsById
 }
+    
