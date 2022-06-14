@@ -42,6 +42,9 @@ Redo primary and foreign keys
 ### SQL Statements for Table Creation
 - ~~[sql statements commands the mockup](/READMEdocs/sql_statements.txt)~~
 - !works [qrTable first draft](/sql/qrTable.sql)
+- !works [petsType first draft](/sql/petsType.sql)
+- !works [petsFound first draft](/sql/petsFound.sql)
+- !works [petsMissing first draft](/sql/petsMissing.sql)
 - !works [petTable first draft](/sql/petTable.sql)
 - !works [usersTable first draft](/sql/usersTable.sql)
 
