@@ -25,7 +25,9 @@ The function is to let users post lost pets or found pets with a description, ph
 - ~~[Rough Draft Table](/READMEdocs/tableRough.jpg)~~
 
 mysql Reverse Engineer
-![Table](/READMEdocs/tableReverse.jpg)
+Redo primary and foreign keys
+![tempTable](/READMEdocs/tableReverse.jpg)
+![Table](/READMEdocs/tempTable.jpg)
 
 ## Database
 ### Users Table
@@ -46,13 +48,19 @@ mysql Reverse Engineer
 #### *routers*
 - ~~[routing for users and pet and log in the mockup](/READMEdocs/routers.txt)~~
 - [qr routers first draft](/routers/qr.js)
-- [pets routers first draft](/routers/pets.js)
+- [petsType routers first draft](/routers/petsType.js)
+- !works[petsFound routers first draft](/routers/petsFound.js)
+- !works[petsMissing routers first draft](/routers/petsMissing.js)
+- !works[pets routers first draft](/routers/pets.js)
 - !works [users routers first draft](/routers/users.js)
 - !works [auth routers first draft](/routers/auth.js)
 
 #### *controllers*
 - [qr controllers first draft](/controllers/qr.js)
-- [pets controllers first draft](/controllers/pets.js)
+- [petsType controllers first draft](/controllers/petType.js)
+- !works[petsFound controllers first draft](/controllers/petsFound.js)
+- !works[petsMissing controllers first draft](/controllers/petsMissing.js)
+- !works[pets controllers first draft](/controllers/pets.js)
 - !works [users controllers first draft](/controllers/users.js)
 - !works [auth controllers first draft](/controllers/auth.js)
 
