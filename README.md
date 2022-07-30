@@ -68,7 +68,8 @@ Redo primary and foreign keys
 - !works [auth controllers first draft](/controllers/auth.js)
 
 ## Wireframe
-*Landing Page Mockup*
+*Landing Page Mockup* </br>
+
 ![landing page mockup](/READMEdocs/landingPage.jpg)
 
 *Wireframe First Draft* </br>
