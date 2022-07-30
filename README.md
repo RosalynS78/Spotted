@@ -70,6 +70,7 @@ Redo primary and foreign keys
 ## Wireframe
 *Landing Page Mockup*
 ![landing page mockup](/READMEdocs/landingPage.jpg)
+
 *Wireframe First Draft*
 ![wireframe first draft](/READMEdocs/wireframe.jpg)
 
