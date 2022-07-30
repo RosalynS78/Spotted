@@ -5,9 +5,9 @@ The purpose of Spotted is to help reunite lost pets with their owners and maybe 
 The function is to let users post lost pets or found pets with a description, photo, last seen date and location last seen.
 
 - Create lost or found pet
-- Read all active listings
-- Update information on pets 
-- Delete pets when no longer needed
+- Read active listings of lost/found
+- Update information on lost/found pets 
+- Delete posts when no longer needed
 
 *extra features*
 - printable pdf flyer
